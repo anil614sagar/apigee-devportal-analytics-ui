@@ -109,7 +109,7 @@ function _devconnect_developer_app_analytics_get_app_label($plural = FALSE, $low
 function apigee_developer_app_analytics_form_devconnect_developer_apps_analytics_form_alter(&$form, &$form_state, $form_id) {
     $module_path = drupal_get_path('module', 'apigee_developer_app_analytics');
     drupal_add_css("$module_path/css/apigee_developer_app_analytics.css");
-    $form['metric']['#access'] = FALSE;
+    unset($form['metric']);
 }
 
 function apigee_developer_app_analytics_devconnect_developer_app_list_alter(&$parameters) {
