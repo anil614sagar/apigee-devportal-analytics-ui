@@ -67,6 +67,7 @@ function _devconnect_developer_app_analytics_detail(DeveloperAppEntity $entity, 
 
     $panes = array();
     $info = array();
+    $tabs = array();
 
     module_load_include('inc', 'apigee_developer_app_analytics', 'developer_app_analytics');
 
